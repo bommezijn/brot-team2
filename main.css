@@ -60,19 +60,18 @@ footer {
 }
 
 article > section {
-  --grid-item-min: 16rem;
+  /* --grid-item-min: 33rem; */
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr)); */
-  grid-template-columns: repeat(auto-fill, minmax(var(--grid-item-min), 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
 }
 
 section > p, section > img {
   border: 1px solid black;
 }
-
-img {
-  /* width: clamp(300px, calc(50vw - 4em), 60vw); */
-  width: 250px;
-  /* max-width: calc(50vw - 2em); */
+figure {
+  width: clamp(300px, 30vw, auto);
+}
+figure img {
+  width: 100%;
 }
