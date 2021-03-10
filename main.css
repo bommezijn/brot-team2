@@ -97,3 +97,15 @@ ul:nth-of-type(1) {
   width: 50%;
   height: auto;
 }
+
+#Library {
+   background-image: url('https://i.imgur.com/uLrXmHw.png');
+   height: 650px;
+   width: 100%;
+   position: relative;
+   background-repeat: no-repeat;
+}
+
+#Library:hover {
+   background-image: url('https://i.stack.imgur.com/8AKdK.gif');
+}
