@@ -1,0 +1,42 @@
+:root {
+  --black: 0,0,0;
+  --white: 255, 255,255;
+  --font-size: clamp(16px, 1.2em, 1.2em);
+  --blue: #0000ff;
+  --pale-yellow: #FFFECE;
+}
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  font-size: var(--font-size);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--blue);
+}
+
+body {
+  margin: 0;
+  background-color: var(--pale-yellow);
+}
+
+h1 {
+  font-size: calc(var(--font-size) * 1.2);
+}
+h2 {
+  font-size: calc(var(--font-size) * 0.9);
+}
+
+section{
+  padding: 1em;
+  width: 100vw;
+  height: 75vh;
+}
+
+section:nth-child(odd) {
+  background-color: #fff;
+}
+
+footer {
+  padding: 1em;
+}
