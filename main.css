@@ -70,8 +70,8 @@ section > p, section > img {
 }
 
 img {
-  /* width: clamp(300px, calc(50vw - 4em), 60vw); */
-  width: 250px;
+  width: clamp(300px, calc(50vw - 4em), 60vw);
+  /* width: 250px; */
   /* max-width: calc(50vw - 2em); */
 }
 
