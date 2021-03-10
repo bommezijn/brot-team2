@@ -68,9 +68,32 @@ article > section {
 section > p, section > img {
   border: 1px solid black;
 }
-figure {
-  width: clamp(300px, 30vw, auto);
+
+img {
+  /* width: clamp(300px, calc(50vw - 4em), 60vw); */
+  width: 250px;
+  /* max-width: calc(50vw - 2em); */
 }
-figure img {
-  width: 100%;
+
+details {
+  display: flex;
+  flex-direction: column;
+}
+
+ul:nth-of-type(1) {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 125px;
+}
+
+#testing {
+  display: flex;
+  flex-direction: column;
+}
+
+.testing-images {
+  justify-self: center;
+  align-self: center;
+  width: 50%;
+  height: auto;
 }

@@ -55,15 +55,35 @@
     </article>
     <article id="testing">
       <h2>Hoe test je PE?</h2>
-      <p>Progressive enhancement valt te testen door functionaliteiten uit te zetten en te kijken als de content nog beschikbaar is in de verschillende browsers. <br>Daarnaast tijdens het ontwerpen kan er gekeken worden hoe beschikbaar een functionaliteit is met <a href="caniuse.com">caniuse.com</a>, screenreaders, responsiveness en zelfs offline support.</p>
+      <p>Progressive enhancement valt te testen door verschillende tools en features te gebruiken/testen. Er worden verschillende features op verschillende browsers getest om te kijken of er hier goede fallbacks voor zijn. Dit kan door het volgende te gebruiken/testen:</p>
       <ul>
         <li>CSS uitschakelen en kijken of de content nog beschikbaar is.</li>
         <li>JS uitschakelen en kijken of de content nog beschikbaar is.</li>
         <li>Kijken of de content in 4 verschillende browsers nog beschikbaar is.</li>
         <li>Kijken of de website responsive is.</li>
         <li>Offline support.</li>
+        <li>Afbeeldingen uitzetten</li>
+        <li>Custom fonts uitzetten</li>
+        <li>Kleur uitzetten & kleurenblindheid instellen</li>
+        <li>Muis/Trackpad werkt niet</li>
+        <li>Breedband internet uitzetten</li>
+        <li>Cookies niet accepteren</li>
+        <li>localStorage doet het niet</li>
       </ul>
-      <p>Er kan nog meer getest worden, zoals checken of de website zonder muis werkt, alleen met het toetsenbord etc. Maar i.v.m. de tijd zal dat niet lukken.</p>
+      <p>Er kunnen verschillende tools gebruikt worden om hierbij te helpen. Zoals caniuse.com, html5test.com, css3test.com en kangax.github.io/compat-table/es6/</p>
+      <p>Zo hebben wij een korte PE test gedaan op 2 websites, https://pictures-from-space.netlify.app/ en https://www.forbes.com/. De PE test ging als volgt:</p>
+
+      <h3>Wat gaan we vergelijken?</h3>
+      <p>Wanneer alles aan staat zien de websites er zo uit:</p><br/>
+      <img class="testing-images" src="/assets/imgs/1.png"><br/>
+      <img class="testing-images" src="/assets/imgs/2.png"><br/>
+      <p>Nu is het de bedoeling om te gaan kijken wat er gebeurd als we onze PWA test gaan uitvoeren en hoe de content er dan uitziet.</p>
+
+      <h3>CSS uitschakelen</h3>
+      <p>Wanneer we de CSS uitschakelen in de Pictures from Space app zien we dat de content nog beschikbaar is maar deze geen progressive enhanced styling heeft. </p><br/>
+      <img class="testing-images" src="/assets/imgs/3.png"><br/>
+      <p>Wanneer de CSS wordt uitgeschakeld bij Forbes zien we aan het begin van de website dat er toch wel wat fout gaat. Maar naarmate we verder scrollen naar een artikel, valt het wel mee en is de content nog te lezen zonder CSS. Eigenlijk hetzelfde verhaal als bij de app Pictures from Space.</p><br/>
+      <img class="testing-images" src="/assets/imgs/4.png"><br/>
     </article>
   </main>
   <footer>
